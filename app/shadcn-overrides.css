@@ -1,0 +1,84 @@
+/* Sobrescribir el color de hover en los menús desplegables */
+.dropdown-menu-content [data-highlighted],
+.dropdown-menu-content [data-state="open"],
+.dropdown-menu-content .dropdown-menu-item:hover,
+.dropdown-menu-content .dropdown-menu-item:focus {
+  background-color: #f3f4f6 !important; /* Un gris claro */
+  color: #111827 !important; /* Un color oscuro para el texto */
+}
+
+/* Sobrescribir el color de hover en los modales */
+.dialog-content button:hover,
+.dialog-content a:hover,
+.dialog-content [role="button"]:hover {
+  background-color: #f3f4f6 !important;
+  color: #111827 !important;
+}
+
+/* Asegurar que los textos sean siempre visibles */
+.dropdown-menu-content .dropdown-menu-item,
+.dialog-content button,
+.dialog-content a,
+.dialog-content [role="button"] {
+  color: #111827 !important;
+}
+
+/* Estilos para el hover en los tabs */
+[role="tab"][data-state="active"] {
+  color: #111827 !important;
+  border-color: #305891 !important;
+}
+
+[role="tab"]:hover {
+  background-color: #f3f4f6 !important;
+  color: #111827 !important;
+}
+
+/* Estilos para los botones */
+.btn-primary {
+  background-color: #305891 !important;
+  color: white !important;
+}
+
+.btn-primary:hover {
+  background-color: #3e6db3 !important;
+  color: white !important;
+}
+
+/* Estilos para dispositivos móviles y tablets */
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dashboard-header .actions {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
+
+/* Estilos para las etiquetas de tipo de clase */
+.badge-presencial {
+  background-color: #ef4444 !important;
+  color: white !important;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3) !important;
+}
+
+.badge-on-demand {
+  background-color: #ec4899 !important;
+  color: white !important;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3) !important;
+}
+
+.badge-workshop {
+  background-color: #8b5cf6 !important;
+  color: white !important;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3) !important;
+}
+
+.badge-formacion {
+  background-color: #3b82f6 !important;
+  color: white !important;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3) !important;
+}
